@@ -21,6 +21,10 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'irbtools'
+  gem 'shoulda-matchers'
 end
 
 group :test do
@@ -28,6 +32,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'vcr', '~> 6.1.0'
+  gem 'webmock', '~> 3.14'
 end
 
 group :development do
