@@ -5,6 +5,6 @@ class Park
     @name = attributes[:fullName] 
     @description = attributes[:description]
     @directions = attributes[:directionsInfo]
-    @hours_of_operation = attributes[:operatingHours][:standardHours]
+    @hours_of_operation = attributes[:operatingHours][0][:standardHours]
   end
 end
